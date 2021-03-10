@@ -4,9 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const SocialIcons = (props) => {
   return (
     <ul className="list-unstyled d-flex flex-wrap social-icons-list m-0">
-      {
-        props.icons.map(icon => (
-          <li key={icon.id}>
+      {props.icons.map((icon) => (
+        <li key={icon.id}>
           <a
             href={icon.url}
             target="_blank"
@@ -16,9 +15,7 @@ const SocialIcons = (props) => {
             <FontAwesomeIcon icon={icon.icon} />
           </a>
         </li>
-        ))
-      }
-
+      ))}
     </ul>
   );
 };

@@ -52,7 +52,10 @@ class AppFooter extends Component {
               <ul className="footer__nav list-unstyled m-0 d-flex flex-wrap justify-content-center justify-content-md-start">
                 {this.state.footerLinks.map((link) => (
                   <li key={link.id}>
-                    <a href={link.url} className="footer__nav__link mr-4 mb-3 mb-md-0 d-inline-block">
+                    <a
+                      href={link.url}
+                      className="footer__nav__link mr-4 mb-3 mb-md-0 d-inline-block"
+                    >
                       {link.name}
                     </a>
                   </li>

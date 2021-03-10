@@ -123,7 +123,7 @@ class Register extends Component {
                       &#8249;
                     </span>
                   </div>
-                    <br/>
+                  <br />
                   <div className="social-icons-wrapper d-inline-block shadow rounded-pill px-2 py-1">
                     <SocialIcons icons={this.state.icons} />
                   </div>

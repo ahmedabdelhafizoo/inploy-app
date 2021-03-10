@@ -1,7 +1,11 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronDown,
+  faCheck,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 
 let focusActiveCard = (e) => {
   if (window.innerWidth <= 767.98) return;
@@ -64,9 +68,14 @@ const ProviderCard = (props) => {
           ))}
         </p>
 
-        <a href="##" className="mb-4 d-inline-block card_view-link font-weight-normal">
+        <a
+          href="##"
+          className="mb-4 d-inline-block card_view-link font-weight-normal"
+        >
           Quick View
-          <span className="ml-3"><FontAwesomeIcon icon={faChevronDown} /></span>
+          <span className="ml-3">
+            <FontAwesomeIcon icon={faChevronDown} />
+          </span>
         </a>
       </div>
     </div>

@@ -10,10 +10,7 @@ class Register extends Component {
         rating: "5.0",
         isVerified: true,
         profileImgae: "1.png",
-        bgImages: [
-          "bg1.png",
-          "bg2.png",
-        ],
+        bgImages: ["bg1.png", "bg2.png"],
         services: ["Architect", "Muralist"],
       },
       {
@@ -22,10 +19,7 @@ class Register extends Component {
         rating: "4.5",
         isVerified: false,
         profileImgae: "2.png",
-        bgImages: [
-          "bg2.png",
-          "bg1.png",
-        ],
+        bgImages: ["bg2.png", "bg1.png"],
         services: ["Professional", "Model"],
       },
       {
@@ -34,14 +28,11 @@ class Register extends Component {
         rating: "4.0",
         isVerified: true,
         profileImgae: "1.png",
-        bgImages: [
-          "bg1.png",
-          "bg2.png",
-        ],
+        bgImages: ["bg1.png", "bg2.png"],
         services: ["Architect", "Developer"],
       },
     ],
-  }
+  };
   render() {
     return (
       <section className="register-section">
@@ -53,8 +44,8 @@ class Register extends Component {
             <div className="col-lg-7 col-xl-6">
               <div>
                 <div className="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-start provider-wrapper">
-                  {this.state.providers.map(provider => (
-                      <ProviderCard key={provider.id} provider={provider}/>
+                  {this.state.providers.map((provider) => (
+                    <ProviderCard key={provider.id} provider={provider} />
                   ))}
                 </div>
               </div>
