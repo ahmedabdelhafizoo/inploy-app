@@ -1,0 +1,156 @@
+// intro section
+.intro-section {
+  padding: 80px 0;
+
+  .btn {
+    min-width: calc(50% - 1rem);
+
+    @include minSmScreen {
+      min-width: 170px;
+      height: 50px;
+    }
+  }
+}
+
+
+// register section
+.register-section {
+  padding: 40px 0 100px;
+
+  @include minSmScreen {
+    .provider-card {
+      width: 47%;
+      margin: auto;
+    }
+  }
+  @include minMdScreen {
+    .provider-wrapper {
+      .provider-card {
+        min-width: 277px;
+        position: relative;
+        transition: all .5s;
+
+        &:first-of-type {
+          z-index: 3;
+
+          &.sm {
+            transform: scale(.6);
+            z-index: 1;
+          }
+
+          &.active {
+            transform: none;
+            z-index: 6;
+          }
+        }
+
+
+        &:nth-of-type(2) {
+          transform: scale(.75) translateX(-60%);
+          z-index: 2;
+
+          &.active {
+            z-index: 4;
+            transform: scale(1) translateX(-45%);
+          }
+        }
+
+        &:nth-of-type(3) {
+          transform: scale(.6) translateX(-165%);
+          z-index: 1;
+
+          &.active {
+            z-index: 4;
+            transform: scale(1) translateX(-100%);
+          }
+        }
+      }
+    }
+  }
+
+  .form {
+    &__btn {
+      font-size: 16px;
+    }
+  }
+}
+// clients section
+.clients-section {
+  background: $lightGray;
+  padding: 50px 0;
+  @include maxMdScreen {
+    padding-bottom: 0;
+  }
+  .features{
+    @include minSmScreen {
+      transform: translateY(-90px);
+      margin-bottom: -90px;
+    }
+    .card {
+      box-shadow: 0px 10px 20px #00000029;
+    }
+  }
+
+  .clients {
+    .client {
+      @include maxMdScreen {
+        width: 33.3%;
+        text-align: center;
+      }
+      @include maxExScreen {
+        width: 50%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+// contact section
+.contact-section {
+  padding: 80px 0 40px;
+  @include maxMdScreen {
+    padding: 40px 0 0;
+  }
+  .section__title {
+    &::after {
+      margin-top: 18px;
+    }
+  }
+  .provider-card {
+    margin-top: 76px;
+    transform: scale(0.85) translateX(30px);
+  }
+
+  .form-wrapper {
+    @include maxMdScreen {
+      width: 100%;
+    }
+  }
+  .contact-wrapper {
+    @include minLgScreen {
+      position: relative;
+      .bg-image {
+        position: absolute;
+        top: 13px;
+        right: -124px;
+        width: 105%;
+        max-width: 105%;
+      }
+    }
+
+    .contact-info {
+      background: $mainColor;
+      padding: 15px;
+      .icon {
+        font-size: 22px;
+        line-height: initial;
+      }
+    }
+    .social-icons-wrapper {
+      .social-icons-list {
+        justify-content: center !important;
+      }
+    }
+  }
+}

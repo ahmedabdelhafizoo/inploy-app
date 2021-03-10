@@ -1,0 +1,76 @@
+.provider-card {
+  max-width: 277px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  &__img {
+    height: 210px;
+    object-fit: cover;
+  }
+
+  &__content {
+
+    position: relative;
+    z-index: 1;
+    background: #fff;
+
+    &__header {
+      transform: translateY(-50px);
+      margin-bottom: -50px;
+
+      .provider-rating,
+      .verified-icon {
+        min-width: 34px;
+        height: 34px;
+      }
+
+      .verified-icon {
+        background: $mainColor;
+      }
+
+      .provider-rating {
+        box-shadow: 0px 3px 6px #00000029;
+      }
+
+      .provider-img {
+        min-width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+    }
+
+    .provider-services {
+      color: $mainColor;
+      font-size: 14px;
+
+      span {
+        &:not(:last-of-type)::after {
+          content: " | ";
+        }
+      }
+    }
+
+    .card_view-link {
+      font-size: 14px;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+// carousel img animation
+.carousel-item.active img {
+  animation: zoom .7s linear forwards;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1.3);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,12 @@
+.social-icons-list {
+  &__item {
+    background: $darkColor;
+    transition: background .2s;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    &:hover {
+      background: $mainColor;
+    }
+  }
+}

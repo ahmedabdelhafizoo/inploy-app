@@ -1,0 +1,23 @@
+//section heading
+.section {
+  &__title {
+    font-size: 30px;
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 25px;
+    &::after {
+      content: "";
+      display: block;
+      width: 92px;
+      height: 8px;
+      background: $mainColor;
+      margin-top: 8px;
+    }
+  }
+
+  &__sub-title {
+    color: $mainColor;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
